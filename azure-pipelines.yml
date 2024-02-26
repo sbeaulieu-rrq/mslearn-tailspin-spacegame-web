@@ -36,10 +36,6 @@ steps:
   displayName: 'Install reportgenerator tool'
   workingDirectory: $(wwwrootDir)
 
-- script: 'dotnet add Tailspin.SpaceGame.Web.Tests package coverlet.msbuild'
-  displayName: 'Added reference to coverlet'
-  workingDirectory: $(wwwrootDir)
-
 - task: DotNetCoreCLI@2
   displayName: 'Restore project dependencies'
   inputs:
